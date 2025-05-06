@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #e1f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: #fff;
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+  }
+  
+  .image-section {
+    flex: 1 1 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .login-section {
+    flex: 1 1 50%;
+    background-color: #6982dc;
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .login-section p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .login-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-section input[type="email"],
+  .login-section input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-section label {
+    font-size: 13px;
+  }
+  
+  .login-section button {
+    background-color: #323334;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-section button:hover {
+    background-color: #7f88ef;
+  }
+  
+  .login-section a {
+    color: #ffae66;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .login-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .image-section,
+    .login-section {
+      flex: 1 1 100%;
+    }
+  }
+  
